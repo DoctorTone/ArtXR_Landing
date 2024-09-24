@@ -1,6 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { Logo } from "./components/Logo";
 import { SCENE } from "./state/Config";
+import LandingText from "./UI/LandingText";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Canvas camera={{ position: SCENE.cameraPosition }}>
         <Logo />
       </Canvas>
+      <LandingText />
     </>
   );
 }
