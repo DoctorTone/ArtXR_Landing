@@ -16,10 +16,18 @@ body {
   position: absolute;
   z-index: 100;
 }
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: rgb(116, 113, 113);
+}
+
 #landing {
   bottom: 20%;
-  left: 25%;
-  width: 50%;
+  left: 0%;
+  width: 100%;
   text-align: center;
   color: rgb(116, 113, 113);
 }

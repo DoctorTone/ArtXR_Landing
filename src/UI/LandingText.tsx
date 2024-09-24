@@ -7,7 +7,8 @@ const LandingText = () => {
         3D graphics technology powering the art world
       </Typography>
       <Typography variant="h6" sx={{ mt: 5 }}>
-        Contact info@artxr.com to find out more
+        Contact <a href="mailto:info@artxr.com">info@artxr.com</a> to find out
+        more
       </Typography>
     </div>
   );
