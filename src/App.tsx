@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Canvas camera={{ position: SCENE.cameraPosition }}>
-        <Logo />
+        <Logo position-y={0.25} />
       </Canvas>
       <LandingText />
     </>

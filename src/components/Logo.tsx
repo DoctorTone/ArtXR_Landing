@@ -4,8 +4,8 @@ Created: Tue Mar 22 14:59:33 2022
 */
 
 import * as THREE from "three";
-import React, { useRef, useEffect } from "react";
-import { useGLTF, PerspectiveCamera, useAnimations } from "@react-three/drei";
+import { useRef, useEffect } from "react";
+import { useGLTF, useAnimations } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
 
 type GLTFResult = GLTF & {
@@ -28,13 +28,14 @@ export function Logo(props: JSX.IntrinsicElements["group"]) {
   const { nodes, materials, animations } = useGLTF(
     "./models/ARTXR_Loader.glb"
   ) as GLTFResult;
+  // @ts-ignore
   const { actions } = useAnimations<GLTFActions>(animations, group);
-  // DEBUG
-  console.log("Anims = ", actions);
 
   useEffect(() => {
     if (actions) {
+      // @ts-ignore
       actions.BracketsAction.play();
+      // @ts-ignore
       actions["Rotating LightsAction"].play();
     }
   }, []);
