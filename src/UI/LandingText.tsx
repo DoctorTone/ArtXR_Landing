@@ -7,10 +7,12 @@ const LandingText = () => {
         3D graphics technology powering the art world
       </Typography>
       <Typography variant="h6">
-        If you want to experience a stunning virtual art gallery or museum
-        experience then contact us at{" "}
-        <a href="mailto:info@artxr.com">info@artxr.com</a> to find out how we
-        can help.
+        If you want to create a stunning virtual art gallery or museum
+        experience please contact us at:{" "}
+        <a href="mailto:enquiries@drt-software.com">
+          enquiries@drt-software.com
+        </a>
+        .
       </Typography>
     </div>
   );
