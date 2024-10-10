@@ -23,11 +23,25 @@ a:active {
   text-decoration: none;
   color: rgb(116, 113, 113);
 }
-
 #landing {
-  bottom: 30%;
+  bottom: 17.5%;
   left: 0%;
   width: 100%;
   text-align: center;
   color: rgb(116, 113, 113);
+}
+@media (min-width: 650px) {
+  #landing {
+    bottom: 27.5%;
+  }
+}
+@media (min-width: 650px) and (orientation: portrait) {
+  #landing {
+    bottom: 30%;
+  }
+}
+@media (min-width: 1200px) {
+  #landing {
+    bottom: 32.5%;
+  }
 }
